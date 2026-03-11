@@ -1,0 +1,72 @@
+.contact-form {
+    background-color: var(--gray-600);
+    padding: 24px;
+    border-radius: 2px;
+    max-width: 712px;
+    margin: auto;
+    display: grid;
+    gap: 24px;
+    font-size: var(--fs-xs);
+}
+
+.contact-form__title {
+    text-align: center;
+    color: var(--tertiary-950);
+}
+
+.contact-form__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.contact-form__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (width > 768px) {
+    .contact-form__row{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contact-form__label {
+    display: grid;
+    gap: 4px;
+    font-size: var(--fs-xxxs);
+    color: var(--white);
+}
+
+.contact-form__input {
+    padding: 16px 16px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    font-size: var(--fs-xs);
+}
+
+.contact-form__textarea {
+    min-height: 105px;
+    /*permite redimensionar la caja de texto solo en vertical, si no se le coloca permite modificar la dimension en vertica y horizontal*/
+    resize: vertical;
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder{
+    color: var(--gray-300);
+    font-size: var(--fs-xs);
+    font-family: var(--main-font);
+}
+
+.contact-form__button {
+    justify-self: center;
+    padding: 12px 24px;
+    background-color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid var(--black);
+    font-size: var(--fs-xs);
+}
